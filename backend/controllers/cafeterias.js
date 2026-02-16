@@ -1,4 +1,4 @@
-const { getCafeterias } = require("../services/cafeterias")
+const { getCafeterias, postCafeteria } = require("../services/cafeterias");
 
 getAllCafeterias = (req, res) => {
     try {   
@@ -11,9 +11,9 @@ getAllCafeterias = (req, res) => {
 
 getCafeteriasPorId = (req, res) => {
     try {
-        const id = req.params.id;
+        const id = parseInt(req.params.id);
         const cafeteria = postCafeteria(id);
-        res.status(200).send(cafeteria);
+        res.send(cafeteria);
 
     } catch (error) {
         res.status(500).json({ error: "Erro interno do servidor"})

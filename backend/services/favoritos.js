@@ -1,8 +1,7 @@
 const fs = require("fs");
 
 getFavoritos = () => {
-    const data = fs.readFileSync("./favoritos.json");
-    return JSON.parse(data);
+    return JSON.parse(fs.readFileSync("./favoritos.json"));
 }
 
 deletaFavorito = (id) => {
