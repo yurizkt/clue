@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "servidor do site clue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yurizkt/clue.git"
+  },
+  "keywords": [
+    "nodejs",
+    "clue",
+    "express"
+  ],
+  "author": "yuri zicatti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yurizkt/clue/issues"
+  },
+  "homepage": "https://github.com/yurizkt/clue#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
+  }
+}
