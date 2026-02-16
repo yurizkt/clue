@@ -1,0 +1,213 @@
+[
+    {
+        "id": 1,
+        "nome": "Cafeteria Central",
+        "endereco": {
+            "localizacao": "Prédio A, Térreo",
+            "bairro": "Centro",
+            "cidade": "São Paulo",
+            "estado": "SP",
+            "pais": "Brasil"
+        },
+        "horarioFuncionamento": {
+            "sabado": "07:00 - 19:00",
+            "domingo": "07:00 - 19:00",
+            "semana": "07:00 - 19:00"
+        },
+        "descricao": "A Cafeteria Central é o lugar perfeito para desfrutar de um café de alta qualidade. Oferecemos uma variedade de grãos selecionados, preparados por baristas experientes.",
+        "imagem": "https://pezinhosmundoafora.com.br/wp-content/uploads/2023/02/co%CC%81pia-de-nouzin1.jpg",
+        "sobre": "Fundada em 2010, a Cafeteria Central tem se dedicado a proporcionar uma experiência única aos amantes de café. Com um ambiente acolhedor e uma equipe apaixonada, buscamos sempre oferecer o melhor em cada xícara.",
+        "experiencia": {
+            "wifi": true,
+            "petFriendly": false,
+            "brunch": true,
+            "laptopFriendly": true,
+            "outdoorSeating": false,
+            "liveMusic": false,
+            "veganOptions": true,
+            "glutenFreeOptions": true
+        },
+        "galeria": [
+            "cafeteria_central_1.jpg",
+            "cafeteria_central_2.jpg",
+            "cafeteria_central_3.jpg"
+        ],
+        "contatos": {
+            "telefone": "+55 11 1234-5678",
+            "email": null,
+            "site": "www.cafeteriacentral.com.br",
+            "redesSociais": {
+                "instagram": "instagram.com/cafeteriacentral",
+                "facebook": "facebook.com/cafeteriacentral"
+            }
+        }
+    },
+    {
+        "id": 2,
+        "nome": "Café do Pátio",
+        "endereco": {
+            "localizacao": "Rua da Paz, 123",
+            "bairro": "Vila Mariana",
+            "cidade": "São Paulo",
+            "estado": "SP",
+            "pais": "Brasil"
+        },
+        "horarioFuncionamento": {
+            "sabado": "08:00 - 18:00",
+            "domingo": "09:00 - 17:00",
+            "semana": "07:30 - 18:30"
+        },
+        "descricao": "Café aconchegante com espaço ao ar livre. Especializado em cafés artesanais e pastéis caseiros.",
+        "imagem": "https://pezinhosmundoafora.com.br/wp-content/uploads/2023/02/co%CC%81pia-de-nouzin1.jpg",
+        "sobre": "O Café do Pátio nasceu da paixão por café e comunidade. Um espaço onde amigos se encontram e desfrutam de momentos especiais.",
+        "experiencia": {
+            "wifi": true,
+            "petFriendly": true,
+            "brunch": true,
+            "laptopFriendly": true,
+            "outdoorSeating": true,
+            "liveMusic": true,
+            "veganOptions": true,
+            "glutenFreeOptions": false
+        },
+        "galeria": [
+            "cafe_patio_1.jpg",
+            "cafe_patio_2.jpg"
+        ],
+        "contatos": {
+            "telefone": "+55 11 3456-7890",
+            "email": "contato@cafedopatio.com.br",
+            "site": "www.cafedopatio.com.br",
+            "redesSociais": {
+                "instagram": "instagram.com/cafedopatio",
+                "facebook": null
+            }
+        }
+    },
+    {
+        "id": 3,
+        "nome": "Espresso Bar Vila Madalena",
+        "endereco": {
+            "localizacao": "Rua Alemanha, 456",
+            "bairro": "Vila Madalena",
+            "cidade": "São Paulo",
+            "estado": "SP",
+            "pais": "Brasil"
+        },
+        "horarioFuncionamento": {
+            "sabado": "09:00 - 20:00",
+            "domingo": "09:00 - 19:00",
+            "semana": "08:00 - 20:00"
+        },
+        "descricao": "Bar de espresso moderno com foco em latte art. Menu diverso com opções veganas e gluten-free.",
+        "imagem": "https://pezinhosmundoafora.com.br/wp-content/uploads/2023/02/co%CC%81pia-de-nouzin1.jpg",
+        "sobre": "Especialistas em café premium desde 2015, buscamos oferecer a melhor experiência em cada xícara.",
+        "experiencia": {
+            "wifi": true,
+            "petFriendly": false,
+            "brunch": true,
+            "laptopFriendly": true,
+            "outdoorSeating": false,
+            "liveMusic": false,
+            "veganOptions": true,
+            "glutenFreeOptions": true
+        },
+        "galeria": [
+            "espresso_bar_vm_1.jpg",
+            "espresso_bar_vm_2.jpg",
+            "espresso_bar_vm_3.jpg"
+        ],
+        "contatos": {
+            "telefone": "+55 11 2345-6789",
+            "email": "hello@espressobarvm.com.br",
+            "site": "www.espressobarvm.com.br",
+            "redesSociais": {
+                "instagram": "instagram.com/espressobarvm",
+                "facebook": "facebook.com/espressobarvm"
+            }
+        }
+    },
+    {
+        "id": 4,
+        "nome": "Café Mineiro",
+        "endereco": {
+            "localizacao": "Av. Paulista, 789",
+            "bairro": "Bela Vista",
+            "cidade": "São Paulo",
+            "estado": "SP",
+            "pais": "Brasil"
+        },
+        "horarioFuncionamento": {
+            "sabado": "10:00 - 18:00",
+            "domingo": "10:00 - 17:00",
+            "semana": "07:00 - 19:00"
+        },
+        "descricao": "Tradicional cafeteria com receitas mineiras. Pão de queijo fresco diariamente e café coado na hora.",
+        "imagem": "https://pezinhosmundoafora.com.br/wp-content/uploads/2023/02/co%CC%81pia-de-nouzin1.jpg",
+        "sobre": "Um pedaço de Minas em São Paulo desde 2008. Mantemos as tradições culinárias da região.",
+        "experiencia": {
+            "wifi": false,
+            "petFriendly": false,
+            "brunch": false,
+            "laptopFriendly": false,
+            "outdoorSeating": false,
+            "liveMusic": false,
+            "veganOptions": false,
+            "glutenFreeOptions": false
+        },
+        "galeria": [
+            "cafe_mineiro_1.jpg"
+        ],
+        "contatos": {
+            "telefone": "+55 11 4567-8901",
+            "email": null,
+            "site": null,
+            "redesSociais": {
+                "instagram": null,
+                "facebook": "facebook.com/cafemineiro"
+            }
+        }
+    },
+    {
+        "id": 5,
+        "nome": "The Coffee Corner",
+        "endereco": {
+            "localizacao": "Rua Oscar Freire, 321",
+            "bairro": "Cerqueira César",
+            "cidade": "São Paulo",
+            "estado": "SP",
+            "pais": "Brasil"
+        },
+        "horarioFuncionamento": {
+            "sabado": "09:00 - 19:00",
+            "domingo": "10:00 - 18:00",
+            "semana": "07:30 - 19:30"
+        },
+        "descricao": "Cafeteria boutique com atmosfera internacional. Café de origem única e pastéis importados.",
+        "imagem": "https://pezinhosmundoafora.com.br/wp-content/uploads/2023/02/co%CC%81pia-de-nouzin1.jpg",
+        "sobre": "Trazendo o melhor do mundo do café para São Paulo, com profissionais qualificados e ambiente premium.",
+        "experiencia": {
+            "wifi": true,
+            "petFriendly": false,
+            "brunch": true,
+            "laptopFriendly": true,
+            "outdoorSeating": false,
+            "liveMusic": false,
+            "veganOptions": true,
+            "glutenFreeOptions": true
+        },
+        "galeria": [
+            "coffee_corner_1.jpg",
+            "coffee_corner_2.jpg"
+        ],
+        "contatos": {
+            "telefone": "+55 11 5678-9012",
+            "email": "info@thecoffeecorner.com.br",
+            "site": "www.thecoffeecorner.com.br",
+            "redesSociais": {
+                "instagram": "instagram.com/thecoffeecorner",
+                "facebook": null
+            }
+        }
+    }
+]

@@ -1,4 +1,8 @@
 const express = require('express');
+
+const cafeteriasRouter = require('./cafeterias');
+const favoritosRouter = require('./favoritos');
+
 const cors = require('cors');
 
 const app = express();
