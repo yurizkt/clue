@@ -1,15 +1,15 @@
-const { getFavoritos, favoritaCafeteria, deletaFavorito } = require("../services/favoritos");
+const { getCafeteriasFavoritas, favoritaCafeteria, deletaFavoritoPorId } = require("../services/favoritos");
 
-getAllFavoritos = (req, res) => {
+getFavoritos = (req, res) => {
     try {   
-        const cafeterias = getFavoritos();
-        res.status(200).send(cafeterias);
+        const cafeterias = getCafeteriasFavoritas();
+        res.json(cafeterias);
     } catch (error) {
-        res.status(500).json({ error: "Erro interno do servidor"})
+        res.status(500).json({ message: "Erro interno do servidor", erro })
     }
 }
 
-postFavoritos = (req, res) => {
+postFavorito = (req, res) => {
     try {
         const id = req.params.id;
         if(id && Number(id)){
@@ -17,7 +17,7 @@ postFavoritos = (req, res) => {
             res.status(201).json({ message: "Cafeteria favoritada com sucesso!" });
         }
     } catch (error) {
-        res.status(500).json({ error: "Erro interno do servidor"})
+        res.status(500).json({ error: "Erro interno do servidor", error })
     }
 }
 
@@ -25,15 +25,16 @@ deleteFavorito = (req, res) => {
     try {
         const id = req.params.id;
         if(id && Number(id)){
-            deletaFavorito(id);
+            deletaFavoritoPorId(id);
             res.status(200).json({ message: "Cafeteria desfavoritada com sucesso!" });
         }
     } catch (error) {
-        res.status(500).json({ error: "Erro interno do servidor"});
+        res.status(500).json({ error: "Erro interno do servidor", error });
     }
 }
 
 module.exports = {
-    getAllFavoritos, deleteFavorito, postFavoritos
-
+    getFavoritos,
+    postFavorito,
+    deleteFavorito
 }

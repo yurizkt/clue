@@ -1,27 +1,27 @@
 const fs = require("fs");
 
-getFavoritos = () => {
-    return JSON.parse(fs.readFileSync("./favoritos.json"));
+getCafeteriasFavoritas = () => {
+    return JSON.parse(fs.readFileSync("favoritos.json"));
 }
 
-deletaFavorito = (id) => {
-    const favoritos = JSON.parse(fs.readFileSync("./favoritos.json"));
+deletaFavoritoPorId = (id) => {
+    const favoritos = JSON.parse(fs.readFileSync("favoritos.json"));
 
-    const novaListaFavoritos = favoritos.filter(favorito => favorito.id !== id);
-    fs.writeFileSync("./favoritos.json", JSON.stringify(novaListaFavoritos));
-    return novaListaFavoritos;
+    const novaListaFavoritos = favoritos.filter(favorito => favorito.id !== Number(id));
+    fs.writeFileSync("favoritos.json", JSON.stringify(novaListaFavoritos));
 }
 
 favoritaCafeteria = (id) => {
-    const cafeterias = JSON.parse(fs.readFileSync("./cafeterias.json"));
-    const favoritos = JSON.parse(fs.readFileSync("./favoritos.json"));
+    const cafeterias = JSON.parse(fs.readFileSync("cafeterias.json"));
+    const favoritos = JSON.parse(fs.readFileSync("favoritos.json"));
 
-    const cafeteriaFavoritada = cafeterias.filter(cafeteria => cafeteria.id === id);
+    const cafeteriaFavoritada = cafeterias.find(cafeteria => cafeteria.id === Number(id));
     const novaListaFavoritos = [...favoritos, cafeteriaFavoritada];
-    fs.writeFileSync("./favoritos.json", JSON.stringify(novaListaFavoritos));
-    return novaListaFavoritos;
+    fs.writeFileSync("favoritos.json", JSON.stringify(novaListaFavoritos));
 }
 
 module.exports = {
-    getFavoritos, deletaFavorito, favoritaCafeteria
+    getCafeteriasFavoritas,
+    favoritaCafeteria,
+    deletaFavoritoPorId
 }
