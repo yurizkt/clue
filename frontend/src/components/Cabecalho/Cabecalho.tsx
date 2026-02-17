@@ -24,14 +24,14 @@ const HeaderStyled = styled.header`
         font-size: .8rem;
         margin-left: 1rem;
         text-decoration: none;
-        color: ${ props => props.theme.cores.primaria.a};
+        color: ${ props => props.theme.cores.secundaria.a };
         text-transform: uppercase;
         &:hover {
-            color: ${ props => props.theme.cores.primaria.b};
+            color: ${ props => props.theme.cores.secundaria.a};
         }
         &.active, &:focus {
-            color: ${ props => props.theme.cores.primaria.b};
-            border-bottom: 1px solid ${ props => props.theme.cores.primaria.b};
+            color: ${ props => props.theme.cores.preto};
+            border-bottom: 1px solid ${ props => props.theme.cores.preto};
             padding-bottom: .3rem;
         }
     }
@@ -46,7 +46,8 @@ const Cabecalho = () => {
                 </Link>
             </div>
             <nav className="menu-navegacao">
-                <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}></NavLink>
+                <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
+                <NavLink to="/favoritos" className={({ isActive }) => isActive ? "active" : ""}>Favoritos</NavLink>
             </nav>
         </HeaderStyled>
     )

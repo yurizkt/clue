@@ -26,7 +26,7 @@ export const CafeteriasProvider = ({ children }:  { children: ReactNode }) => {
             }
         };
 
-        fetchCafeterias()
+        fetchCafeterias();
 
     }, []);
 

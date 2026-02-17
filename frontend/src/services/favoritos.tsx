@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const cafeteriasAPI = axios.create({
-    baseURL: "http://locahost:8000/favoritos"
+    baseURL: "http://localhost:8000/favoritos"
 });
 
 const getFavoritos = async () => {

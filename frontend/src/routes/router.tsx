@@ -10,11 +10,11 @@ export const router = createBrowserRouter([
         ErrorBoundary: () => <h1>Ops, algo deu errado!</h1>,
         children: [
             {
-                index: true,
+                path: "",
                 element: <Home />,
             },
             {
-                path: "favoritos",
+                path: "/favoritos",
                 element: <Favoritos />,
             }
         ]
